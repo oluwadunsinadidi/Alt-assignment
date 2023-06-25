@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body class="container">
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="links-item">
+            <svg width="156" height="40" viewBox="0 0 156 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.6471 8.43938C31.0613 7.85354 30.1032 7.85354 29.5173 8.43938L26.4643 11.4948C25.2134 10.6627 23.7779 10.2497 22.3365 10.2497C20.4174 10.2497 18.4737 10.9822 17.0337 12.4469L12.5336 16.9472C9.96732 19.5106 9.65099 23.4747 11.5787 26.384L8.52587 29.4394C7.94003 30.0253 7.94003 30.9745 8.52587 31.5606C8.81891 31.8536 9.20267 32 9.58643 32C9.97044 32 10.354 31.8536 10.647 31.5606L13.6998 28.5051C14.9509 29.3372 16.395 29.7502 17.8365 29.7502C19.7306 29.7502 21.6743 29.0178 23.1393 27.553L27.6307 23.053C30.197 20.4893 30.5133 16.5252 28.5854 13.616L31.6471 10.5605C32.2329 9.97466 32.2329 9.02522 31.6471 8.43938ZM26.8276 17.75C26.8276 18.9512 26.3589 20.0821 25.5096 20.9317L21.0182 25.4317C20.1657 26.2813 19.013 26.75 17.8365 26.75C17.1568 26.75 16.5064 26.5832 15.9088 26.2988L18.1223 24.0605C18.7082 23.4747 18.7082 22.5255 18.1223 21.9394C17.5612 21.3536 16.612 21.3536 16.0261 21.9394L13.7879 24.1777C13.5009 23.5829 13.3367 22.9325 13.3367 22.25C13.3367 21.0488 13.8054 19.9179 14.655 19.0683L19.1301 14.5683C19.9797 13.7187 21.1353 13.25 22.3365 13.25C23.0162 13.25 23.6635 13.4168 24.2613 13.7012L21.9791 15.9862C21.3933 16.572 21.3933 17.5212 21.9791 18.1073C22.2722 18.4004 22.6557 18.5468 23.0397 18.5468C23.4206 18.5468 23.8043 18.4004 24.0971 18.1073L26.3767 15.8223C26.6635 16.4168 26.8276 17.0674 26.8276 17.75Z" fill="#0065FE"/>
+              <path d="M40.0865 8V32" stroke="#0065FE" stroke-width="2" stroke-linecap="round"/>
+              <path d="M55.3825 27.336C52.0465 27.336 49.7185 25.752 48.7825 23.184L51.6145 21.528C52.2625 23.232 53.5585 24.096 55.4785 24.096C57.3265 24.096 58.1665 23.352 58.1665 22.32C58.1665 21.72 57.9025 21.264 57.3745 20.952C56.8465 20.616 55.9105 20.256 54.5425 19.872C53.0305 19.416 52.1185 19.056 51.0625 18.312C50.0305 17.544 49.4785 16.392 49.4785 14.856C49.4785 13.344 50.0065 12.12 51.0865 11.232C52.1665 10.32 53.4865 9.864 54.9985 9.864C57.7105 9.864 59.8465 11.256 60.9985 13.632L58.2145 15.24C57.5425 13.8 56.4625 13.08 54.9985 13.08C53.6305 13.08 52.7905 13.776 52.7905 14.76C52.7905 15.288 53.0065 15.72 53.4385 16.056C53.8945 16.368 54.7345 16.728 55.9825 17.112L57.1345 17.496C57.3985 17.568 57.7585 17.712 58.2145 17.904C58.6705 18.072 59.0305 18.24 59.2705 18.408C59.7745 18.72 60.5425 19.32 60.8545 19.896C61.2145 20.472 61.4785 21.312 61.4785 22.272C61.4785 23.832 60.9025 25.056 59.7745 25.968C58.6465 26.88 57.1825 27.336 55.3825 27.336ZM71.4895 27.336C68.9695 27.336 66.8815 26.496 65.2255 24.816C63.5695 23.136 62.7535 21.072 62.7535 18.6C62.7535 16.128 63.5695 14.04 65.2255 12.384C66.8815 10.704 68.9695 9.864 71.4895 9.864C74.5375 9.864 77.2735 11.4 78.7135 13.824L75.8575 15.48C75.0175 13.968 73.4095 13.08 71.4895 13.08C69.8575 13.08 68.5375 13.584 67.5295 14.616C66.5455 15.648 66.0415 16.968 66.0415 18.6C66.0415 20.208 66.5455 21.528 67.5295 22.56C68.5375 23.592 69.8575 24.096 71.4895 24.096C73.4095 24.096 75.0655 23.184 75.8575 21.72L78.7135 23.376C77.2735 25.8 74.5615 27.336 71.4895 27.336ZM80.748 27V10.2H84.06V27H80.748ZM92.6481 27.336C89.3121 27.336 86.9841 25.752 86.0481 23.184L88.8801 21.528C89.5281 23.232 90.8241 24.096 92.7441 24.096C94.5921 24.096 95.4321 23.352 95.4321 22.32C95.4321 21.72 95.1681 21.264 94.6401 20.952C94.1121 20.616 93.1761 20.256 91.8081 19.872C90.2961 19.416 89.3841 19.056 88.3281 18.312C87.2961 17.544 86.7441 16.392 86.7441 14.856C86.7441 13.344 87.2721 12.12 88.3521 11.232C89.4321 10.32 90.7521 9.864 92.2641 9.864C94.9761 9.864 97.1121 11.256 98.2641 13.632L95.4801 15.24C94.8081 13.8 93.7281 13.08 92.2641 13.08C90.8961 13.08 90.0561 13.776 90.0561 14.76C90.0561 15.288 90.2721 15.72 90.7041 16.056C91.1601 16.368 92.0001 16.728 93.2481 17.112L94.4001 17.496C94.6641 17.568 95.0241 17.712 95.4801 17.904C95.9361 18.072 96.2961 18.24 96.5361 18.408C97.0401 18.72 97.8081 19.32 98.1201 19.896C98.4801 20.472 98.7441 21.312 98.7441 22.272C98.7441 23.832 98.1681 25.056 97.0401 25.968C95.9121 26.88 94.4481 27.336 92.6481 27.336ZM106.125 27.336C102.789 27.336 100.461 25.752 99.5247 23.184L102.357 21.528C103.005 23.232 104.301 24.096 106.221 24.096C108.069 24.096 108.909 23.352 108.909 22.32C108.909 21.72 108.645 21.264 108.117 20.952C107.589 20.616 106.653 20.256 105.285 19.872C103.773 19.416 102.861 19.056 101.805 18.312C100.773 17.544 100.221 16.392 100.221 14.856C100.221 13.344 100.749 12.12 101.829 11.232C102.909 10.32 104.229 9.864 105.741 9.864C108.453 9.864 110.589 11.256 111.741 13.632L108.957 15.24C108.285 13.8 107.205 13.08 105.741 13.08C104.373 13.08 103.533 13.776 103.533 14.76C103.533 15.288 103.749 15.72 104.181 16.056C104.637 16.368 105.477 16.728 106.725 17.112L107.877 17.496C108.141 17.568 108.501 17.712 108.957 17.904C109.413 18.072 109.773 18.24 110.013 18.408C110.517 18.72 111.285 19.32 111.597 19.896C111.957 20.472 112.221 21.312 112.221 22.272C112.221 23.832 111.645 25.056 110.517 25.968C109.389 26.88 107.925 27.336 106.125 27.336ZM128.4 24.816C126.696 26.496 124.632 27.336 122.208 27.336C119.784 27.336 117.72 26.496 116.016 24.816C114.336 23.112 113.496 21.048 113.496 18.6C113.496 16.152 114.336 14.088 116.016 12.408C117.72 10.704 119.784 9.864 122.208 9.864C124.632 9.864 126.696 10.704 128.4 12.408C130.104 14.088 130.944 16.152 130.944 18.6C130.944 21.048 130.104 23.112 128.4 24.816ZM118.344 22.56C119.376 23.592 120.672 24.096 122.208 24.096C123.744 24.096 125.04 23.592 126.072 22.56C127.104 21.528 127.632 20.208 127.632 18.6C127.632 16.992 127.104 15.672 126.072 14.64C125.04 13.608 123.744 13.08 122.208 13.08C120.672 13.08 119.376 13.608 118.344 14.64C117.312 15.672 116.784 16.992 116.784 18.6C116.784 20.208 117.312 21.528 118.344 22.56ZM146.063 27H142.487L139.103 21.168H136.583V27H133.271V10.2H139.991C141.551 10.2 142.871 10.752 143.951 11.832C145.031 12.912 145.583 14.232 145.583 15.768C145.583 17.856 144.287 19.776 142.343 20.664L146.063 27ZM139.991 13.296H136.583V18.264H139.991C141.239 18.264 142.271 17.136 142.271 15.768C142.271 14.4 141.239 13.296 139.991 13.296Z" fill="#0065FE"/>
+              </svg>
+              
+          </li>
+
+          <li class="link-item"><span class="blue">MY URLs</span></li>
+          <li class="link-item">
+            <span>Feature</span>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </li>
+          <li class="link-item">Pricing</li>
+          <li class="link-item">Analytics</li>
+          <li class="link-item">FAQs</li>
+
+          <li class="link-item login"><span class="blue">log in</span></li>
+          <li class="link-item blue">
+            <span class="cta">Try for free</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="heading">
+
+      <h2 class="heading-primary">Optimize Your Online Experience with Our</h2>
+    </h2>
+    <h3 class="heading-tertiary">Advanced <span class="blue">URL Shortening </span>Solution </h3>
+    <div class="img-stroke">
+      <svg width="174" height="21" viewBox="0 0 174 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M162.517 0.905029C75.1007 1.58333 17.7488 11.4833 0 16.3486L9.28502 15.694L2.32125 17.9693L10.2135 17.6848L6.03526 19.3913L12.0705 20.8133C52.0748 16.4528 149.09 6.6406 173.63 5.2387L155.524 4.88668C165.556 3.5543 166.666 3.60686 166.666 3.60686C166.666 3.60686 162.517 2.61145 162.517 0.905029Z" fill="#005AE2"/>
+        </svg>
+        
+    </div>
+    <p class="about">Personalize your shortened URLs to align with your brand identity. Utilize custome slugs,</p>
+    <p class="brand"> branded links, and domain customization option to reinforce your brand presence and </p>
+    <p class="user">enhance user enagagement.</p>
+
+  </div>
+  <div class="click">
+    <div class="sign-up">Sign Up</div>
+    <div class="Learn-more">Learn more</div>
+  </div>
+
+  <div class="hero">
+    <span class="vector2">
+      <svg width="247" height="258" viewBox="0 0 247 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M86.6771 41.1107C135.228 -63.1745 174.407 59.5845 198.623 107.021C233.043 174.448 318.301 234.6 115.971 255.011C-86.3584 275.422 25.9891 171.467 86.6771 41.1107Z" fill="#E2E9F0"/>
+        </svg>
+    </span>
+    <div class="conatainer2">
+      <span class="frames">
+        <svg width="384" height="80" viewBox="0 0 384 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M50 23.3333L60 23.3333C62.1887 23.3333 64.356 23.7643 66.3781 24.6019C68.4002 25.4395 70.2375 26.6672 71.7851 28.2148C73.3328 29.7624 74.5604 31.5998 75.398 33.6219C76.2356 35.644 76.6667 37.8112 76.6667 39.9999C76.6667 42.1886 76.2356 44.3559 75.398 46.378C74.5604 48.4001 73.3328 50.2374 71.7851 51.785C70.2375 53.3327 68.4002 54.5603 66.3781 55.3979C64.356 56.2355 62.1887 56.6666 60 56.6666H50M30 56.6666H20C17.8113 56.6666 15.644 56.2355 13.6219 55.3979C11.5998 54.5603 9.76253 53.3327 8.21488 51.785C5.08928 48.6594 3.33333 44.4202 3.33333 39.9999C3.33333 35.5796 5.08928 31.3404 8.21488 28.2148C11.3405 25.0892 15.5797 23.3333 20 23.3333H30" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M26.6667 40H53.3333" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M122 23.3333L132 23.3333C134.189 23.3333 136.356 23.7643 138.378 24.6019C140.4 25.4395 142.237 26.6672 143.785 28.2148C145.333 29.7624 146.56 31.5998 147.398 33.6219C148.236 35.644 148.667 37.8112 148.667 39.9999C148.667 42.1886 148.236 44.3559 147.398 46.378C146.56 48.4001 145.333 50.2374 143.785 51.785C142.237 53.3327 140.4 54.5603 138.378 55.3979C136.356 56.2355 134.189 56.6666 132 56.6666H122M102 56.6666H92C89.8113 56.6666 87.644 56.2355 85.6219 55.3979C83.5998 54.5603 81.7625 53.3327 80.2149 51.785C77.0893 48.6594 75.3333 44.4202 75.3333 39.9999C75.3333 35.5796 77.0893 31.3404 80.2149 28.2148C83.3405 25.0892 87.5797 23.3333 92 23.3333H102" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M98.6667 40H125.333" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M194 23.3333L204 23.3333C206.189 23.3333 208.356 23.7643 210.378 24.6019C212.4 25.4395 214.237 26.6672 215.785 28.2148C217.333 29.7624 218.56 31.5998 219.398 33.6219C220.236 35.644 220.667 37.8112 220.667 39.9999C220.667 42.1886 220.236 44.3559 219.398 46.378C218.56 48.4001 217.333 50.2374 215.785 51.785C214.237 53.3327 212.4 54.5603 210.378 55.3979C208.356 56.2355 206.189 56.6666 204 56.6666H194M174 56.6666H164C161.811 56.6666 159.644 56.2355 157.622 55.3979C155.6 54.5603 153.763 53.3327 152.215 51.785C149.089 48.6594 147.333 44.4202 147.333 39.9999C147.333 35.5796 149.089 31.3404 152.215 28.2148C155.34 25.0892 159.58 23.3333 164 23.3333H174" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M170.667 40H197.333" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M244 39C243.448 39 243 39.4477 243 40C243 40.5523 243.448 41 244 41V39ZM284 40L274 34.2265V45.7735L284 40ZM244 41H275V39H244V41Z" fill="#005AE2"/>
+           <path d="M354 23.3333L364 23.3333C366.189 23.3333 368.356 23.7643 370.378 24.6019C372.4 25.4395 374.237 26.6672 375.785 28.2148C377.333 29.7624 378.56 31.5998 379.398 33.6219C380.236 35.644 380.667 37.8112 380.667 39.9999C380.667 42.1886 380.236 44.3559 379.398 46.378C378.56 48.4001 377.333 50.2374 375.785 51.785C374.237 53.3327 372.4 54.5603 370.378 55.3979C368.356 56.2355 366.189 56.6666 364 56.6666H354M334 56.6666H324C321.811 56.6666 319.644 56.2355 317.622 55.3979C315.6 54.5603 313.763 53.3327 312.215 51.785C309.089 48.6594 307.333 44.4202 307.333 39.9999C307.333 35.5796 309.089 31.3404 312.215 28.2148C315.34 25.0892 319.58 23.3333 324 23.3333H334" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M330.667 40H357.333" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <p class="frames-text1">Seamlessly transform your long URLs into <strong>concise</strong></p>
+      <p class="frames-text2">and <strong>shareable links</strong> with just few clicks.</p>
+    </div>
+  </div>
+
+  <div class="objects">
+    <div class="rectangle">
+      <svg width="1440" height="93" viewBox="0 0 1440 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M201.516 9.70664C217.021 3.29808 233.634 0 250.411 0H1186.9C1203.48 0 1219.89 3.21974 1235.24 9.48037L1440 93H0L201.516 9.70664Z" fill="#F8F7F7"/>
+        </svg>
+    </div>
+
+    <div class="eclipse">
+      <svg width="964" height="57" viewBox="0 0 964 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1_138)">
+        <ellipse cx="482" cy="24.5" rx="478" ry="24.5" fill="url(#paint0_linear_1_138)" fill-opacity="0.7" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_1_138" x="0" y="0" width="964" height="57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.0705882 0 0 0 0 0.141176 0 0 0 0 0.34902 0 0 0 0.35 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_138"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_138" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_1_138" x1="482" y1="0" x2="482" y2="49" gradientUnits="userSpaceOnUse">
+        <stop offset="0.106755" stop-color="#E2E9F0"/>
+        <stop offset="0.440102" stop-color="#DCE4EB"/>
+        <stop offset="1" stop-color="#E2E9F0" stop-opacity="0"/>
+        </linearGradient>
+        </defs>
+        </svg>
+    </div>
+  </div>
+  <div class="grid--5-cols">
+    <div class="one">
+      <p class="stop">One Stop.</p>
+      <p class="four">Four <span class="blue">Possibilities.</span> </p>
+    </div>
+
+
+      <div class="users">
+        <p class="number">3M</p>
+        <p class="active">Active users</p>
+      </div>
+      <div class="users">
+        <p class="number">60M</p>
+        <p class="active">Linka & QR</p>
+        <p class="active">codes created</p>
+      </div>
+      <div class="users">
+        <p class="number">1B</p>
+        <p class="active">Clicked & Scanned connections</p>
+      </div>
+
+      <div class="users">
+        <p class="number">300k</p>
+        <p class="active">App Integrations</p>
+      </div>
+  </div>
+
+  <div class="grid--3-cols">
+    <div class="reason">
+      <div class="align">
+
+        <svg width="6" height="40" viewBox="0 0 6 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 0V48" stroke="url(#paint0_linear_1_196)" stroke-width="5"/>
+          <defs>
+            <linearGradient id="paint0_linear_1_196" x1="3.05" y1="0" x2="3.05" y2="48" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#112232"/>
+              <stop offset="1" stop-color="#4D6B88" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="why">Why choose <span class="blue">Scissors</span> </div>
+      </div>
+        <p class="text">Scissors is the hub of everything that has to do</p>
+        <p class="text"> with your link management. We shorten your URLs,</p> 
+        <p class="text"> allow you creating custom ones for your personal, </p> 
+        <p class="text">business, event usuage. Our swift QR code  </p> 
+        <p class="text">creation, management and ususage tracking with </p> 
+        <p class="text"> advance analytics for all these is second to  </p> 
+        <p class="text">  none </p> 
+
+    </div>
+    <div class="img1">
+      <svg width="57" height="60" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1_202)">
+        <path d="M31.1 23H34.1C34.7566 23 35.4068 23.1293 36.0134 23.3806C36.6201 23.6319 37.1712 24.0002 37.6355 24.4645C38.0998 24.9288 38.4681 25.48 38.7194 26.0866C38.9707 26.6932 39.1 27.3434 39.1 28C39.1 28.6566 38.9707 29.3068 38.7194 29.9134C38.4681 30.52 38.0998 31.0712 37.6355 31.5355C37.1712 31.9998 36.6201 32.3681 36.0134 32.6194C35.4068 32.8707 34.7566 33 34.1 33H31.1M25.1 33H22.1C21.4434 33 20.7932 32.8707 20.1866 32.6194C19.58 32.3681 19.0288 31.9998 18.5645 31.5355C17.6268 30.5979 17.1 29.3261 17.1 28C17.1 26.6739 17.6268 25.4021 18.5645 24.4645C19.5022 23.5268 20.7739 23 22.1 23H25.1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24.1 28H32.1" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <circle cx="28.1" cy="28" r="28" fill="#3284FF" fill-opacity="0.13"/>
+        <defs>
+        <clipPath id="clip0_1_202">
+        <rect width="24" height="24" fill="white" transform="translate(16.1 16)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        
+        <defs>
+        <clipPath id="clip0_1_201">
+        <rect width="24" height="24" fill="white" transform="translate(16.1 16)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        <p class="shortening">URL shortening</p>
+        <p class="text">Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.</p>
+    </div>
+
+    <div class="img2">
+      <svg  width="57" height="60" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27.1 20H20.1C19.5696 20 19.0609 20.2107 18.6858 20.5858C18.3107 20.9609 18.1 21.4696 18.1 22V36C18.1 36.5304 18.3107 37.0391 18.6858 37.4142C19.0609 37.7893 19.5696 38 20.1 38H34.1C34.6304 38 35.1391 37.7893 35.5142 37.4142C35.8893 37.0391 36.1 36.5304 36.1 36V29" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34.6 18.5C34.9978 18.1022 35.5374 17.8787 36.1 17.8787C36.6626 17.8787 37.2022 18.1022 37.6 18.5C37.9978 18.8978 38.2213 19.4374 38.2213 20C38.2213 20.5626 37.9978 21.1022 37.6 21.5L28.1 31L24.1 32L25.1 28L34.6 18.5Z" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="28.1" cy="28" r="28" fill="#3284FF" fill-opacity="0.13"/>
+        </svg>
+        
+        <p class="shortening">Custom URLs</p>
+        <p class="text">With Scissor, you can create custome URLs, with the length you want! a solution for socials and businesses</p>
+        
+    </div>
+  </div>
+  
+  <div class="grid--3-cols">
+    <div class="reason"></div>
+    <div class="qrcodes">
+    <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.8859 19.0676H18.8859V26.0676H25.8859V19.0676Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M36.8859 19.0676H29.8859V26.0676H36.8859V19.0676Z" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M36.8859 30.0676H29.8859V37.0676H36.8859V30.0676Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M25.8859 30.0676H18.8859V37.0676H25.8859V30.0676Z" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="28.1" cy="28" r="28" fill="#3284FF" fill-opacity="0.13"/>
+    </svg>
+        <p class="shortening">QR Codes</p>
+        <p class="text">Generate QR codes to your business, events.
+      Bring your audience and customers to your
+      doorstep with this scan and go solution.</p>
+    </div>
+    <div class="img5">
+      <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1_202)">
+        <path d="M31.1 23H34.1C34.7566 23 35.4068 23.1293 36.0134 23.3806C36.6201 23.6319 37.1712 24.0002 37.6355 24.4645C38.0998 24.9288 38.4681 25.48 38.7194 26.0866C38.9707 26.6932 39.1 27.3434 39.1 28C39.1 28.6566 38.9707 29.3068 38.7194 29.9134C38.4681 30.52 38.0998 31.0712 37.6355 31.5355C37.1712 31.9998 36.6201 32.3681 36.0134 32.6194C35.4068 32.8707 34.7566 33 34.1 33H31.1M25.1 33H22.1C21.4434 33 20.7932 32.8707 20.1866 32.6194C19.58 32.3681 19.0288 31.9998 18.5645 31.5355C17.6268 30.5979 17.1 29.3261 17.1 28C17.1 26.6739 17.6268 25.4021 18.5645 24.4645C19.5022 23.5268 20.7739 23 22.1 23H25.1" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24.1 28H32.1" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <circle cx="28.1" cy="28" r="28" fill="#3284FF" fill-opacity="0.13"/>
+        <defs>
+        <clipPath id="clip0_1_202">
+        <rect width="24" height="24" fill="white" transform="translate(16.1 16)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        <p class="shortening">Data Analytics</p>
+        <p class="text"> Receive data on the usuage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.</p>
+    </div>
+  </div>
+  <section id="pricing">
+    <div class="container ">
+      <div class="pricing-heading">
+        <div class="boundare"></div>
+        <div>
+          <h1>A <span class="perfect">Price perfect</span> for your needs</h1>
+          <p>
+            for catering for your personal,business,events and social needs,</br> you
+            can be rest assured we have you in mind in our pricing
+          </p>
+        </div>
+      </div>
+      <div class="pricing-card grid grid-3-cols">
+        <div class="pricing-basic flyer">
+          <p class="basic">Basic</p>  
+          <div  class="pricing-free">
+            <div>
+              <h1>Free</h1>
+              <p>free plans for all users</p>
+            </div>
+            <ul>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Unlimited Url Shortening</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Basic link analytics</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>customizable short links</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Standard Support</span></li>
+                <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1_284)">
+                  <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_284">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg><span>Ad-supported</span>
+                </li>
+            </ul>
+          </div> 
+        </div>
+        <div class="pricing-professional flyer">
+          <p class="pro">Professional</p>  
+              <div class="professional">
+                <div class="price">
+                  <h1>$15/month</h1>
+                  <p>ideal for business creators</p>
+                </div> 
+                <ul>
+                  <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <g clip-path="url(#clip0_1_316)">
+                  <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_316">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg><span>Enhanced link Analytics</span>
+              </li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_316)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_316">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Custom branded domains</span>
+            </li>
+            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <g clip-path="url(#clip0_1_316)">
+              <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_316">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg><span>Advanced link customization</span>
+          </li>
+          <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_1_316)">
+            <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_316">
+            <rect width="16" height="16" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg><span>Priority support</span>
+        </li>
+        <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_1_316)">
+          <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_1_316">
+          <rect width="16" height="16" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg><span>Ad-free Experience</span>
+      </li>
+    </ul>
+      </div>
+        </div>
+        <div class="pricing-teams flyer">
+          <p class="basic">Teams</p>  
+          <div  class="pricing-free">
+            <div>
+              <h1>$25/month</h1>
+              <p>share with up to 10 users</p>
+            </div>
+            <ul>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Team collaboration</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>User Roles and Permissions</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>Enhanced Security</span></li>
+              <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_1_284)">
+                <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_284">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg><span>API-access</span>
+              </li>
+                <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1_284)">
+                  <path d="M14.6667 7.38668V8.00001C14.6658 9.43763 14.2003 10.8365 13.3396 11.9879C12.4788 13.1393 11.2689 13.9817 9.89023 14.3893C8.51162 14.7969 7.03817 14.7479 5.68964 14.2497C4.34112 13.7515 3.18976 12.8307 2.4073 11.6247C1.62484 10.4187 1.25319 8.99205 1.34778 7.55755C1.44237 6.12305 1.99813 4.75756 2.93218 3.66473C3.86623 2.57189 5.12852 1.81027 6.53079 1.49344C7.93306 1.17662 9.40017 1.32157 10.7133 1.90668" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.6667 2.66666L8 9.33999L6 7.33999" stroke="#005AE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_284">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg><span>Dedicated Account Manager</span>
+                </li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+      <div class="btn-div">
+        <button class="btn-left pricing-btn">Get custom pricing</button>
+        <button class="btn-right pricing-btn">select Pricing</button>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="cta">
+<div class="container">
+<div class="cta-div">
+    <form action="" class="cta-form">
+      <div class="form-div">
+        <div class="paste">
+          <input type="text" placeholder="Place URL here...">
+        </div>
+        <div class="select">
+          <div class="choose">
+            <select name="" id="">
+              <option value="">Choose Domain</option>
+            </select>
+            <div>
+              <input type="text" placeholder="Type Alias here">
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="btn--div">
+        <button class="form-btn"><span>Trim URL</span> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+          <path d="M5.45883 4.31606C5.43987 4.54147 5.11187 4.59847 5.00637 4.39468L4.4383 3.29755C4.40156 3.22646 4.3267 3.17895 4.24205 3.1728L2.9348 3.07797C2.69196 3.06037 2.63057 2.75589 2.85011 2.65794L4.03191 2.13061C4.10844 2.09645 4.15973 2.02703 4.16628 1.94842L4.26845 0.734818C4.28741 0.509407 4.61541 0.452413 4.7209 0.656199L5.28897 1.75334C5.32571 1.82443 5.40048 1.87195 5.48523 1.87808L6.79247 1.97291C7.03531 1.99051 7.0967 2.29499 6.87716 2.39294L5.69536 2.92027C5.61874 2.95445 5.56755 3.02385 5.56099 3.10247L5.45883 4.31606Z" fill="white"/>
+          <path d="M1.70599 5.1442C1.67434 5.25336 1.50749 5.25336 1.47583 5.1442L1.30536 4.55649C1.29435 4.51841 1.26227 4.48867 1.22127 4.47842L0.588205 4.32018C0.470601 4.29079 0.470601 4.13591 0.588205 4.10652L1.22127 3.94828C1.26227 3.93802 1.29435 3.90828 1.30536 3.87021L1.47583 3.28249C1.50749 3.17333 1.67434 3.17333 1.70599 3.28249L1.87646 3.87021C1.88747 3.90828 1.91951 3.93802 1.96055 3.94828L2.59362 4.10652C2.71122 4.13591 2.71122 4.29079 2.59362 4.32018L1.96055 4.47842C1.91951 4.48867 1.88747 4.51841 1.87646 4.55649L1.70599 5.1442Z" fill="white"/>
+          <path d="M3.88781 8.51993C3.85615 8.6291 3.68931 8.6291 3.65765 8.51993L3.48718 7.93222C3.47617 7.89414 3.44409 7.8644 3.40309 7.85415L2.77002 7.69591C2.65242 7.66652 2.65242 7.51164 2.77002 7.48225L3.40309 7.32401C3.44409 7.31375 3.47617 7.28402 3.48718 7.24594L3.65765 6.65822C3.68931 6.54906 3.85615 6.54906 3.88781 6.65822L4.05828 7.24594C4.06929 7.28402 4.10132 7.31375 4.14237 7.32401L4.77544 7.48225C4.89304 7.51164 4.89304 7.66652 4.77544 7.69591L4.14237 7.85415C4.10132 7.8644 4.06929 7.89414 4.05828 7.93222L3.88781 8.51993Z" fill="white"/>
+          <path d="M2.03127 7.19694C2.01016 7.26972 1.89893 7.26972 1.87783 7.19694L1.76418 6.80513C1.75684 6.77975 1.73545 6.75992 1.70812 6.75309L1.28608 6.64759C1.20767 6.628 1.20767 6.52475 1.28608 6.50515L1.70812 6.39966C1.73545 6.39282 1.75684 6.373 1.76418 6.34761L1.87783 5.9558C1.89893 5.88303 2.01016 5.88303 2.03127 5.9558L2.14491 6.34761C2.15225 6.373 2.17361 6.39282 2.20097 6.39966L2.62302 6.50515C2.70142 6.52475 2.70142 6.628 2.62302 6.64759L2.20097 6.75309C2.17361 6.75992 2.15225 6.77975 2.14491 6.80513L2.03127 7.19694Z" fill="white"/>
+          <path d="M7.12218 5.84666C7.10107 5.91944 6.98984 5.91944 6.96874 5.84666L6.85509 5.45485C6.84775 5.42947 6.82636 5.40964 6.79903 5.40281L6.37699 5.29731C6.29858 5.27772 6.29858 5.17447 6.37699 5.15487L6.79903 5.04938C6.82636 5.04254 6.84775 5.02272 6.85509 4.99733L6.96874 4.60552C6.98984 4.53275 7.10107 4.53275 7.12218 4.60552L7.23582 4.99733C7.24316 5.02272 7.26452 5.04254 7.29188 5.04938L7.71393 5.15487C7.79233 5.17447 7.79233 5.27772 7.71393 5.29731L7.29188 5.40281C7.26452 5.40964 7.24316 5.42947 7.23582 5.45485L7.12218 5.84666Z" fill="white"/>
+          <path d="M14.3182 14.003L13.5909 14.6782M4.15778 5.04228L15.9624 15.0877C16.2555 15.3371 16.2654 15.7629 15.9843 16.0239V16.0239C15.7043 16.2839 15.2496 16.2777 14.9805 16.008C10.9047 11.9231 3.72842 4.70747 4.15778 5.04228Z" stroke="white"/>
+          </svg></button>
+        <div class="trim">By clicking TrimURL, I agree to the <strong>Terms of Service</strong>,<br><strong>Private Policy</strong> and Use of Cookies</p>
+        </div>
+      </div>
+    </form>
+</div>
+</div>
+  </section>
+  <section class="faq">
+    <div class="container">
+      <div class="faq">
+        <div class="faq-heading">
+          <div class="boundary"></div>
+          <h1>FAQs</h1>
+        </div>
+        <div class="faq-questions">
+          <div class="joined-p">
+            <div class="questions-minus">
+              <p>How does URL shortening work?</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="joined">URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the <br> original URL. When a user clicks on the shortened link, they are redirected to the intended destination.
+            </p>
+          </div>         
+          <div class="questions-faq">
+            <p>Is it necessary to create an account to use the URL shortening service?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>Are the shortened links permanent? Will they expire?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>Are there any limitations on the number of URLs I can shorten?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>Can I customize the shortened URLs to reflect my brand or content?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>Can I track the performance of my shortened URLs?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>How secure is the URL shortening service? Are the shortened links protected <br>
+               against spam or malicious activity?</p>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+          </div>
+          <div class="questions-faq">
+            <p>What is a QR code and what can it do?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+          <div class="questions-faq">
+            <p>
+              Is there an API available for integrating the URL shortening service into my own <br> applications or websites?</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 12H19" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="optimize">
+<div class="container">
+<div class="optimize">
+  <h1>Revolutionizing Link Optimization</h1>
+  <button class="started">Get started</button>
+</div>
+</div>
+  </section>
+ 
+  <footer class="footer">
+ <div class="grid gd">
+  <div class="logo-col">
+    <svg width="156" height="40" viewBox="0 0 156 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M31.6471 8.43938C31.0613 7.85354 30.1032 7.85354 29.5173 8.43938L26.4643 11.4948C25.2134 10.6627 23.7779 10.2497 22.3365 10.2497C20.4174 10.2497 18.4737 10.9822 17.0337 12.4469L12.5336 16.9472C9.96732 19.5106 9.65099 23.4747 11.5787 26.384L8.52587 29.4394C7.94003 30.0253 7.94003 30.9745 8.52587 31.5606C8.81891 31.8536 9.20267 32 9.58643 32C9.97044 32 10.354 31.8536 10.647 31.5606L13.6998 28.5051C14.9509 29.3372 16.395 29.7502 17.8365 29.7502C19.7306 29.7502 21.6743 29.0178 23.1393 27.553L27.6307 23.053C30.197 20.4893 30.5133 16.5252 28.5854 13.616L31.6471 10.5605C32.2329 9.97466 32.2329 9.02522 31.6471 8.43938ZM26.8276 17.75C26.8276 18.9512 26.3589 20.0821 25.5096 20.9317L21.0182 25.4317C20.1657 26.2813 19.013 26.75 17.8365 26.75C17.1568 26.75 16.5064 26.5832 15.9088 26.2988L18.1223 24.0605C18.7082 23.4747 18.7082 22.5255 18.1223 21.9394C17.5612 21.3536 16.612 21.3536 16.0261 21.9394L13.7879 24.1777C13.5009 23.5829 13.3367 22.9325 13.3367 22.25C13.3367 21.0488 13.8054 19.9179 14.655 19.0683L19.1301 14.5683C19.9797 13.7187 21.1353 13.25 22.3365 13.25C23.0162 13.25 23.6635 13.4168 24.2613 13.7012L21.9791 15.9862C21.3933 16.572 21.3933 17.5212 21.9791 18.1073C22.2722 18.4004 22.6557 18.5468 23.0397 18.5468C23.4206 18.5468 23.8043 18.4004 24.0971 18.1073L26.3767 15.8223C26.6635 16.4168 26.8276 17.0674 26.8276 17.75Z" fill="#000"/>
+      <path d="M40.0865 8V32" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M55.3825 27.336C52.0465 27.336 49.7185 25.752 48.7825 23.184L51.6145 21.528C52.2625 23.232 53.5585 24.096 55.4785 24.096C57.3265 24.096 58.1665 23.352 58.1665 22.32C58.1665 21.72 57.9025 21.264 57.3745 20.952C56.8465 20.616 55.9105 20.256 54.5425 19.872C53.0305 19.416 52.1185 19.056 51.0625 18.312C50.0305 17.544 49.4785 16.392 49.4785 14.856C49.4785 13.344 50.0065 12.12 51.0865 11.232C52.1665 10.32 53.4865 9.864 54.9985 9.864C57.7105 9.864 59.8465 11.256 60.9985 13.632L58.2145 15.24C57.5425 13.8 56.4625 13.08 54.9985 13.08C53.6305 13.08 52.7905 13.776 52.7905 14.76C52.7905 15.288 53.0065 15.72 53.4385 16.056C53.8945 16.368 54.7345 16.728 55.9825 17.112L57.1345 17.496C57.3985 17.568 57.7585 17.712 58.2145 17.904C58.6705 18.072 59.0305 18.24 59.2705 18.408C59.7745 18.72 60.5425 19.32 60.8545 19.896C61.2145 20.472 61.4785 21.312 61.4785 22.272C61.4785 23.832 60.9025 25.056 59.7745 25.968C58.6465 26.88 57.1825 27.336 55.3825 27.336ZM71.4895 27.336C68.9695 27.336 66.8815 26.496 65.2255 24.816C63.5695 23.136 62.7535 21.072 62.7535 18.6C62.7535 16.128 63.5695 14.04 65.2255 12.384C66.8815 10.704 68.9695 9.864 71.4895 9.864C74.5375 9.864 77.2735 11.4 78.7135 13.824L75.8575 15.48C75.0175 13.968 73.4095 13.08 71.4895 13.08C69.8575 13.08 68.5375 13.584 67.5295 14.616C66.5455 15.648 66.0415 16.968 66.0415 18.6C66.0415 20.208 66.5455 21.528 67.5295 22.56C68.5375 23.592 69.8575 24.096 71.4895 24.096C73.4095 24.096 75.0655 23.184 75.8575 21.72L78.7135 23.376C77.2735 25.8 74.5615 27.336 71.4895 27.336ZM80.748 27V10.2H84.06V27H80.748ZM92.6481 27.336C89.3121 27.336 86.9841 25.752 86.0481 23.184L88.8801 21.528C89.5281 23.232 90.8241 24.096 92.7441 24.096C94.5921 24.096 95.4321 23.352 95.4321 22.32C95.4321 21.72 95.1681 21.264 94.6401 20.952C94.1121 20.616 93.1761 20.256 91.8081 19.872C90.2961 19.416 89.3841 19.056 88.3281 18.312C87.2961 17.544 86.7441 16.392 86.7441 14.856C86.7441 13.344 87.2721 12.12 88.3521 11.232C89.4321 10.32 90.7521 9.864 92.2641 9.864C94.9761 9.864 97.1121 11.256 98.2641 13.632L95.4801 15.24C94.8081 13.8 93.7281 13.08 92.2641 13.08C90.8961 13.08 90.0561 13.776 90.0561 14.76C90.0561 15.288 90.2721 15.72 90.7041 16.056C91.1601 16.368 92.0001 16.728 93.2481 17.112L94.4001 17.496C94.6641 17.568 95.0241 17.712 95.4801 17.904C95.9361 18.072 96.2961 18.24 96.5361 18.408C97.0401 18.72 97.8081 19.32 98.1201 19.896C98.4801 20.472 98.7441 21.312 98.7441 22.272C98.7441 23.832 98.1681 25.056 97.0401 25.968C95.9121 26.88 94.4481 27.336 92.6481 27.336ZM106.125 27.336C102.789 27.336 100.461 25.752 99.5247 23.184L102.357 21.528C103.005 23.232 104.301 24.096 106.221 24.096C108.069 24.096 108.909 23.352 108.909 22.32C108.909 21.72 108.645 21.264 108.117 20.952C107.589 20.616 106.653 20.256 105.285 19.872C103.773 19.416 102.861 19.056 101.805 18.312C100.773 17.544 100.221 16.392 100.221 14.856C100.221 13.344 100.749 12.12 101.829 11.232C102.909 10.32 104.229 9.864 105.741 9.864C108.453 9.864 110.589 11.256 111.741 13.632L108.957 15.24C108.285 13.8 107.205 13.08 105.741 13.08C104.373 13.08 103.533 13.776 103.533 14.76C103.533 15.288 103.749 15.72 104.181 16.056C104.637 16.368 105.477 16.728 106.725 17.112L107.877 17.496C108.141 17.568 108.501 17.712 108.957 17.904C109.413 18.072 109.773 18.24 110.013 18.408C110.517 18.72 111.285 19.32 111.597 19.896C111.957 20.472 112.221 21.312 112.221 22.272C112.221 23.832 111.645 25.056 110.517 25.968C109.389 26.88 107.925 27.336 106.125 27.336ZM128.4 24.816C126.696 26.496 124.632 27.336 122.208 27.336C119.784 27.336 117.72 26.496 116.016 24.816C114.336 23.112 113.496 21.048 113.496 18.6C113.496 16.152 114.336 14.088 116.016 12.408C117.72 10.704 119.784 9.864 122.208 9.864C124.632 9.864 126.696 10.704 128.4 12.408C130.104 14.088 130.944 16.152 130.944 18.6C130.944 21.048 130.104 23.112 128.4 24.816ZM118.344 22.56C119.376 23.592 120.672 24.096 122.208 24.096C123.744 24.096 125.04 23.592 126.072 22.56C127.104 21.528 127.632 20.208 127.632 18.6C127.632 16.992 127.104 15.672 126.072 14.64C125.04 13.608 123.744 13.08 122.208 13.08C120.672 13.08 119.376 13.608 118.344 14.64C117.312 15.672 116.784 16.992 116.784 18.6C116.784 20.208 117.312 21.528 118.344 22.56ZM146.063 27H142.487L139.103 21.168H136.583V27H133.271V10.2H139.991C141.551 10.2 142.871 10.752 143.951 11.832C145.031 12.912 145.583 14.232 145.583 15.768C145.583 17.856 144.287 19.776 142.343 20.664L146.063 27ZM139.991 13.296H136.583V18.264H139.991C141.239 18.264 142.271 17.136 142.271 15.768C142.271 14.4 141.239 13.296 139.991 13.296Z" fill="#000"/>
+      </svg>
+      <div class="socials">
+
+        <ul class="social-links">
+          
+          <li class="social-list"><a href="#"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.0859 2.47656C22.3437 3.53125 21.5625 4.35156 20.7422 4.9375V5.52344C20.7422 8.96094 19.5215 12.0664 17.0801 14.8398C14.6387 17.6133 11.3672 19 7.26562 19C4.60938 19 2.1875 18.2969 0 16.8906C0.234375 16.9297 0.605469 16.9492 1.11328 16.9492C3.30078 16.9492 5.27344 16.2656 7.03125 14.8984C6.01562 14.8594 5.09766 14.5371 4.27734 13.9316C3.45703 13.3262 2.89063 12.5547 2.57812 11.6172C2.96875 11.6953 3.26172 11.7344 3.45703 11.7344C3.88672 11.7344 4.31641 11.6758 4.74609 11.5586C3.65234 11.3633 2.74414 10.8262 2.02148 9.94727C1.29883 9.06836 0.9375 8.0625 0.9375 6.92969V6.8125C1.71875 7.24219 2.42187 7.45703 3.04688 7.45703C1.67969 6.51953 0.996094 5.19141 0.996094 3.47266C0.996094 2.57422 1.19141 1.79297 1.58203 1.12891C4.12109 4.21484 7.38281 5.85547 11.3672 6.05078C11.2891 5.58203 11.25 5.23047 11.25 4.99609C11.25 3.66797 11.709 2.54492 12.627 1.62695C13.5449 0.708984 14.668 0.25 15.9961 0.25C17.4023 0.25 18.5547 0.738281 19.4531 1.71484C20.5469 1.48047 21.543 1.10938 22.4414 0.601562C22.0898 1.73438 21.4063 2.59375 20.3906 3.17969C21.2891 3.0625 22.1875 2.82812 23.0859 2.47656Z" fill="#141414"/>
+          </svg></a></li>
+          
+          <li  class="social-list"><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11.3701C16.1234 12.2023 15.9813 13.0523 15.5938 13.7991C15.2063 14.5459 14.5932 15.1515 13.8416 15.5297C13.0901 15.908 12.2385 16.0397 11.4078 15.906C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1903 8.22774 13.4229 8.09408 12.5923C7.96042 11.7616 8.09208 10.91 8.47034 10.1584C8.8486 9.40691 9.4542 8.7938 10.201 8.4063C10.9478 8.0188 11.7978 7.87665 12.63 8.00006C13.4789 8.12594 14.2649 8.52152 14.8717 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></a></li>
+          <li class="social-list"><a href="#"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.7005 0.4375C21.1302 0.4375 21.511 0.583984 21.843 0.876953C22.1751 1.16992 22.3411 1.53125 22.3411 1.96094V20.4766C22.3411 20.9062 22.1751 21.2676 21.843 21.5605C21.511 21.8535 21.1302 22 20.7005 22H2.30203C1.87234 22 1.50125 21.8535 1.18875 21.5605C0.876251 21.2676 0.720001 20.9062 0.720001 20.4766V1.96094C0.720001 1.53125 0.876251 1.16992 1.18875 0.876953C1.50125 0.583984 1.87234 0.4375 2.30203 0.4375H20.7005ZM7.10672 18.8359V8.52344H3.94266V18.8359H7.10672ZM5.52469 7.11719C6.0325 7.11719 6.47195 6.93164 6.84305 6.56055C7.21414 6.18945 7.39969 5.75 7.39969 5.24219C7.39969 4.73438 7.21414 4.29492 6.84305 3.92383C6.47195 3.55273 6.0325 3.36719 5.52469 3.36719C5.01688 3.36719 4.57742 3.55273 4.20633 3.92383C3.83524 4.29492 3.64969 4.73438 3.64969 5.24219C3.64969 5.78906 3.82547 6.23828 4.17703 6.58984C4.52859 6.94141 4.97781 7.11719 5.52469 7.11719ZM19.1184 18.8359V13.1523C19.1184 11.5898 18.8548 10.3887 18.3274 9.54883C17.8001 8.70898 16.7942 8.28906 15.3098 8.28906C13.8255 8.28906 12.8098 8.83594 12.263 9.92969H12.2044V8.52344H9.1575V18.8359H12.3216V13.7383C12.3216 11.9805 12.9661 11.1016 14.2552 11.1016C14.763 11.1016 15.1438 11.2676 15.3977 11.5996C15.6516 11.9316 15.7981 12.2441 15.8372 12.5371C15.8763 12.8301 15.8958 13.25 15.8958 13.7969V18.8359H19.1184Z" fill="#141414"/>
+          </svg></a></li>
+          <li class="social-list"><a href="#"><svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.9706 0.4375C21.2831 0.4375 21.5663 0.554688 21.8202 0.789062C22.0741 1.02344 22.2011 1.29688 22.2011 1.60938V20.8281C22.2011 21.1406 22.0741 21.4141 21.8202 21.6484C21.5663 21.8828 21.2831 22 20.9706 22H15.4628V13.6797H18.2753L18.6855 10.3984H15.4628V8.28906C15.4628 7.23438 16.0097 6.70703 17.1034 6.70703H18.8026V3.83594C18.2167 3.71875 17.3769 3.66016 16.2831 3.66016C15.0331 3.66016 14.0273 4.04102 13.2655 4.80273C12.5038 5.56445 12.123 6.62891 12.123 7.99609V10.3984H9.31046V13.6797H12.123V22H1.75186C1.43936 22 1.16592 21.8828 0.931549 21.6484C0.697174 21.4141 0.579987 21.1406 0.579987 20.8281V1.60938C0.579987 1.29688 0.697174 1.02344 0.931549 0.789062C1.16592 0.554688 1.43936 0.4375 1.75186 0.4375H20.9706Z" fill="#141414"/>
+          </svg>
+        </a></li>
+      </div>
+      </ul>
+  </div>
+  <div>
+
+    <div class="nav-col">
+      Why scissor?
+    </div>  
+    <ul class="footer-list">
+
+      <li class="notes">Scissor 101</li>
+      <li class="notes">Integrations and API</li>
+      <li class="notes">Pricing</li>
+    </ul>
+  </div>
+  <div>
+
+    <div>
+      <nav class="nav-col">Solutions
+      </nav>  
+    </div>
+    <ul class="footer-list">
+
+      <li class="notes">Social media</li>
+      <li class="notes">Digital Marketing</li>
+      <li class="notes">Customer Service</li>
+      <li class="notes">For Developers</li>
+    </ul>
+  </div>
+  <div>
+      <nav class="nav-col">Products
+      </nav>  
+      <ul class="footer-list">
+      <li class="notes">link Management</li>
+      <li class="notes">QR Codes</li>
+      <li class="notes">Link-in-bio</li>
+    </ul>
+  </div>
+
+  <div>
+    <nav class="nav-col">Company
+    </nav>  
+    <ul class="footer-list">
+
+      <li class="notes">About Scissor</li>
+      <li class="notes">Careers</li>
+      <li class="notes">Partners</li>
+      <li class="notes">Press</li>
+      <li class="notes">Contact</li>
+      <li class="notes">Reviews</li>
+    </ul>
+  </div>
+</div>
+<div class="grid">
+  <div class="nav-col mg-sm"></div>
+  <div>
+    <div class="nav-col">
+     Resources
+    </div>  
+    <ul class="footer-list">
+      <li class="notes">Blog</li>
+      <li class="notes">Resources library</li>
+      <li class="notes">Developers</li>
+      <li class="notes">App Connectors</li>
+      <li class="notes">Support</li>
+      <li class="notes">Trust Center</li>
+      <li class="notes">Browser Extension</li>
+      <li class="notes">Mobile App</li>
+    </ul>
+  </div>
+  <div>
+
+    <div class="nav-col">
+   Features
+    </div>  
+    <ul class="footer-list">
+
+      <li class="notes">Branded Links</li>
+      <li class="notes">Mobile Links</li>
+      <li class="notes">Campaign</li>
+      <li class="notes">Management & Analytics</li>
+      <li class="notes">QR Code generation</li>
+    </ul>
+  </div>
+  <div>
+
+    <div class="nav-col">
+     Legal
+    </div>  
+    <ul class="footer-list">
+
+      <li class="notes">Privacy Policy</li>
+      <li class="notes">Cookie Policy</li>
+      <li class="notes">Terms of Service</li>
+      <li class="notes">Acceptable Use Policy</li>
+      <li class="notes">Code of Con</li>
+    </ul>
+  </div>
+  <div class="nav-col"></div>
+
+  
+</div>
+
+  </footer>
+  </body>
+</html>
